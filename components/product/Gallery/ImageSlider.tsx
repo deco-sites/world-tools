@@ -30,9 +30,10 @@ export default function GallerySlider(props: Props) {
   }
 
   const {
-    page: { product: { image: images = [] } },
+    page: { product: { image: rawImages } },
     layout: { width, height },
   } = props;
+  const images = rawImages ?? [];
   const aspectRatio = `${width} / ${height}`;
 
   return (

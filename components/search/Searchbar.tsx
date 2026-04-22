@@ -52,7 +52,8 @@ function Searchbar({ placeholder = "What are you looking for?", action = "/s", n
     const { displaySearchPopup } = useUI();
     const searchInputRef = useRef<HTMLInputElement>(null);
     const { setQuery, payload, loading } = useSuggestions(loader);
-    const { products = [], searches = [] } = payload.value ?? {};
+    const products = payload.value?.products ?? [];
+    const searches = payload.value?.searches ?? [];
     const hasProducts = Boolean(products.length);
     const hasTerms = Boolean(searches.length);
     useEffect(() => {

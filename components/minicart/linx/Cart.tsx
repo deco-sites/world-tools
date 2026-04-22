@@ -3,13 +3,13 @@ import BaseCart from "../common/Cart.tsx";
 
 function Cart() {
   const { cart, loading, updateItem, addCoupon } = useCart();
-  const items = cart.value?.Basket?.Items ?? [];
+  const items = cart.value?.Shopper?.Basket?.Items ?? [];
 
-  const total = cart.value?.Basket?.Total ?? 0;
-  const subtotal = cart.value?.Basket?.SubTotal ?? 0;
+  const total = cart.value?.Shopper?.Basket?.Total ?? 0;
+  const subtotal = cart.value?.Shopper?.Basket?.SubTotal ?? 0;
   const locale = "pt-BR";
   const currency = "BRL";
-  const coupon = cart.value?.Basket?.Coupons?.[0]?.Code ?? undefined;
+  const coupon = cart.value?.Shopper?.Basket?.Coupons?.[0]?.Code ?? undefined;
 
   return (
     <BaseCart

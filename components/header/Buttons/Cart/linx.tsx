@@ -3,9 +3,9 @@ import Button from "./common.tsx";
 
 function CartButton() {
   const { loading, cart } = useCart();
-  const cartSize = cart.value?.Basket?.Items?.length || 0;
-  const products = cart.value?.Basket?.Items;
-  const coupon = cart.value?.Basket?.Coupons?.[0]?.Code;
+  const cartSize = cart.value?.Shopper?.Basket?.Items?.length || 0;
+  const products = cart.value?.Shopper?.Basket?.Items;
+  const coupon = cart.value?.Shopper?.Basket?.Coupons?.[0]?.Code;
 
   return (
     <Button
