@@ -1,5 +1,5 @@
-import { Section } from "deco/blocks/section.ts";
-import { context } from "deco/mod.ts";
+import { type Section } from "@deco/deco/blocks";
+import { context } from "@deco/deco";
 
 interface Props {
   children?: Section;

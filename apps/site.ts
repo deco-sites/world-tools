@@ -5,8 +5,8 @@ import { color as vtex } from "apps/vtex/mod.ts";
 import { color as wake } from "apps/wake/mod.ts";
 import { color as linx } from "apps/linx/mod.ts";
 import { color as nuvemshop } from "apps/nuvemshop/mod.ts";
-import { Section } from "deco/blocks/section.ts";
-import { App } from "deco/mod.ts";
+import { type Section } from "@deco/deco/blocks";
+import { type App } from "@deco/deco";
 import { rgb24 } from "std/fmt/colors.ts";
 import manifest, { Manifest } from "../manifest.gen.ts";
 

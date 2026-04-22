@@ -1,6 +1,6 @@
 import { signal } from "@preact/signals";
 import type { Suggestion } from "apps/commerce/types.ts";
-import type { Resolved } from "deco/engine/core/resolver.ts";
+import type { Resolved } from "@deco/deco";
 import { useCallback } from "preact/compat";
 import { invoke } from "../runtime.ts";
 

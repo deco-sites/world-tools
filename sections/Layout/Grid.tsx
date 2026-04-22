@@ -1,4 +1,4 @@
-import { context } from "deco/mod.ts";
+import { context } from "@deco/deco";
 import { grid, VNode } from "../../constants.tsx";
 import { clx } from "../../sdk/clx.ts";
 

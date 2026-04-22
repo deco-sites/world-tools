@@ -1,4 +1,4 @@
-import { Section } from "deco/blocks/section.ts";
+import { type Section } from "@deco/deco/blocks";
 import { clx } from "../../sdk/clx.ts";
 import { grid } from "../../constants.tsx";
 

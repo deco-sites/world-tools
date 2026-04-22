@@ -1,4 +1,4 @@
-import type { Section } from "deco/blocks/section.ts";
+import type { Section } from "@deco/deco/blocks";
 import type { ProductDetailsPage } from "apps/commerce/types.ts";
 
 export interface Props {

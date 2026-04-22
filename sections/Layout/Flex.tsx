@@ -1,5 +1,5 @@
 import { clx } from "$store/sdk/clx.ts";
-import { context } from "deco/mod.ts";
+import { context } from "@deco/deco";
 import { flex, VNode } from "../../constants.tsx";
 
 interface Props {
